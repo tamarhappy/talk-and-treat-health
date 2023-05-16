@@ -1,0 +1,65 @@
+.nav {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    background-color: #011824;
+    border: 1px solid lightgray;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav_logo {
+    object-fit: contain;
+    margin: 0 30px;
+    margin-top: 2px;
+    height: 140px;
+}
+
+.nav_search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    padding: 5px;
+    margin-left: 100px;
+}
+
+.nav_input {
+    height: 30px;
+    padding: 10px;
+    border: black;
+    background: rgb(243, 243, 243);
+    border-radius: 50px;
+    width: 600px;
+    margin-top: 40px;
+}
+
+.nav_logo > span {
+    padding: 1px;
+    height: 60px !important;
+    margin-left: 5px;
+    color: #a6a6a6;
+}
+
+.nav_options {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav_option {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #a6a6a6;
+    margin-left: 50px;
+}
+
+.nav_optionOne {
+    font-size: 15px;
+}
+
+.nav_optionTwo {
+    font-size: 13px;
+    font-weight: 800;
+}
