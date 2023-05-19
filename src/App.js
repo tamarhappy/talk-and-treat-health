@@ -1,35 +1,29 @@
+import React from 'react';
 import './App.css';
-import { Redirect, Route, Switch } from 'react-router-dom';
-import Navigation from './components/layout/Navigation';
-import Home from './components/Home';
-import Homedetails from './components/Homedetails';
-import Login from './components/Login';
-import RegisterContext from './components/context/register/registerContext';
+import { Route } from 'react-router-dom';
+import Home from './components/home/Home';
+import Login from './components/login/Login';
+import Dashboard from './components/dashboard/Dashboard';
+import Profile from './components/profile/Profile';
 
-function App() {
 
-  return (
-    <>
-    <Navigation />
-    <main>
-      <Switch>
-        <Route path='/' exact>
-          <Redirect to='/home' />
-        </Route>
-        <Route path='/home'>
-          <Home />
-        </Route>
-        <Route path='/homedetails'>
-          <Homedetails />
-        </Route>
-        <Route path='/login'>
-          <Login />
-        </Route>
-        <RegisterContext />
-      </Switch>
-    </main>
-    </>
-  );
+const App = () => {
+   return (
+     <div>
+     <Route path='/home'>
+      <Home />
+     </Route>
+     <Route path='/login'>
+      <Login />
+     </Route>
+     <Route path='/dashboard'>
+      <Dashboard />
+     </Route>
+     <Route path='/profile'>
+      <Profile />
+     </Route>
+     </div>
+   );
 }
 
 export default App;
