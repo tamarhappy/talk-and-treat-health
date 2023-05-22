@@ -1,6 +1,6 @@
 import React from 'react';
 import './Dashboard.css';
-
+import { Link } from 'react-router-dom';
 const Dashboard = () => {
    // function Conditions({activeProfileId, user}) {
    //    return (
@@ -94,6 +94,7 @@ const Dashboard = () => {
                 <span class="material-symbols-rounded">trending_up</span>
                 <span class="material-symbols-rounded">clinical_notes</span>
             </div>
+            <Link to={'/consult'}>
             <div className='dash_containerFour'>
                 <h1>See A Doc...</h1>
                 <img className='image_5' 
@@ -103,6 +104,7 @@ const Dashboard = () => {
                 <span className='material-symbols-rounded'>sms</span>
                 <span className='nav_optionOne'>Consult</span>
             </div>
+            </Link>
         </div>
     </div>
   );

@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('https://miro.medium.com/max/2000/1*Ypf4ofxMi-cxsWIDsFWeJQ.jpeg');
+    background: rgb(150, 190, 252);
 }
 
 .login_logo {

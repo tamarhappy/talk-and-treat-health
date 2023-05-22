@@ -1,0 +1,130 @@
+.pharm_pic {
+    background-image: url('https://th.bing.com/th/id/R.45bda6ef2270047c4d72f5e8bb7d2d18?rik=a8EjzDRXteLu3w&pid=ImgRaw&r=0');
+    max-width: 100%;
+    padding-bottom: 500px;
+    margin-top: -20px;
+}
+
+.pharm_pic > h2 {
+    margin-left: 20px;
+}
+
+.main > h2 {
+    margin-left: 20px;
+}
+
+.med_1 {
+    width: 150px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    background: #ebeaea;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.med_1 > img {
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    max-width: 100%;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.med_1 > h3 {
+    margin-left: 23px;
+    margin-top: 15px;
+}
+
+.med_2 {
+    width: 150px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    background: #ebeaea;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.med_2 > img {
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    max-width: 100%;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.med_2 > h3 {
+    margin-left: 23px;
+    margin-top: 15px;
+}
+
+.med_3 {
+    width: 150px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    background: #ebeaea;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.med_3 > img {
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    max-width: 100%;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.med_3 > h3 {
+    margin-left: 23px;
+    margin-top: 15px;
+}
+
+.med_4 {
+    width: 150px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    background: #ebeaea;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.med_4 > img {
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    max-width: 100%;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+
+.med_4 > h3 {
+    margin-left: 23px;
+    margin-top: 15px;
+}

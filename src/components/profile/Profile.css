@@ -1,0 +1,82 @@
+.profile {
+    background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/2ff14972501477.5be9ceade6db8.jpg');
+}
+
+.profile_1 > img {
+    border-radius: 50% 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    max-width: 5%;
+    margin-right: 5px;
+    float: right;
+}
+
+.profile_1 > h1 {
+    color: #a6a6a6;
+}
+
+.profile_2 {
+    width: 300px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    color: #a6a6a6;
+    background: #011824;
+    padding-right: 80px;
+}
+
+.profile_2 > img {
+    border-radius: 50% 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    max-width: 15%;
+    margin-right: 5px;
+}
+
+.profile_3 .sub_one {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background: white;
+    color: black;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.profile_3 .sub_one > span {
+    margin-top: 20px;
+}
+
+.profile_3 .sub_two  {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: rgb(70, 135, 219);
+    color: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.pharms {
+    background-color: rgb(70, 135, 219);
+    color: white;
+    border-radius: 50px;
+    width: 50%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: white;
+    cursor: pointer;
+    margin-left: 90px;
+}

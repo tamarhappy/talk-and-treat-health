@@ -1,5 +1,5 @@
 import React from 'react';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Profile.css';
 
 const Profile = () => {
@@ -19,8 +19,8 @@ const Profile = () => {
             <h3>Gender: female</h3>
 
             <h1>Conditions</h1>
-            <span class="material-symbols-rounded">check_circle</span><h2>Asthma</h2>
-            <span class="material-symbols-rounded">check_circle</span><h2>Ulcers</h2>
+            <h3>Asthma</h3>
+            <h3>Ulcers</h3>
 
             <h1>Your Doctors</h1>
             <img className='doc_1' 
@@ -34,21 +34,21 @@ const Profile = () => {
              alt='' 
             />
             <h3>Dr.Nicholas Cole - Gastroenterologist</h3>
-        </div>
+
         <div className='profile_3'>
             <div className='sub_one'>
                 <h3>Visit schedule</h3>
                 <span class="material-symbols-rounded">notifications</span>
             </div>
             <div className='sub_two'>
-                <img className='lab' src='' alt='' />
-                <h2>Lab test</h2><h2>5 June</h2>
-                <h3>Schedule the visit</h3><h3>08.00am</h3>
+                <h3>Lab test</h3><h3>5 June, 8:00am</h3>
             </div>
         </div>
-
+        <Link to={'/pharmacy'}>
         <div className='direct_pharm'>
-            <button className='pharm'>Pharmacy</button>
+            <button className='pharms'>Pharmacy</button>
+        </div>
+        </Link>
         </div>
     </div>
   );

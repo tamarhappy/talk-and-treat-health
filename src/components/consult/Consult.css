@@ -1,0 +1,27 @@
+.chat_nav  > img {
+    border-radius: 50% 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    max-width: 10%;
+    margin-right: 5px;
+}
+
+.chat_nav {
+    display: flex;
+}
+
+.chat_nav > h3 {
+    margin-top: 50px;
+    margin-left: -140px;
+}
+
+.chat_box {
+    background: #e0e0e0;
+    padding-bottom: 500px;
+}
+
+.chat_text {
+    
+}
