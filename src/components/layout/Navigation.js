@@ -43,13 +43,11 @@ const Navigation = ({user}) => {
               <span className='nav_optionOne'>Checkup</span>
           </div>
           </Link>
-          {/* <div className='nav_option'>
-              <span className='material-symbols-rounded'>account_circle</span>
-              <span className='nav_optionOne'>User</span>
-          </div> */}
+          <Link to={'/contacts'}>
           <div className='nav_option'>
               <span className='material-symbols-rounded'>call</span>
           </div>
+          </Link>
         </div>
         {/* <Dashboard {...{user}} /> */}
     </div>

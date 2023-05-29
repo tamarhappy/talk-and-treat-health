@@ -13,6 +13,11 @@
     margin-left: 20px;
 }
 
+.meds {
+    display: flex;
+    justify-content: space-between;
+}
+
 .med_1 {
     width: 150px;
     height: fit-content;
@@ -127,4 +132,15 @@
 .med_4 > h3 {
     margin-left: 23px;
     margin-top: 15px;
+}
+
+.pharm_buy {
+    margin-left: 50px;
+}
+
+.pharm_buy .buy {
+    width: 50%;
+    font-weight: bolder;
+    border-radius: 10px;
+    cursor: pointer;
 }

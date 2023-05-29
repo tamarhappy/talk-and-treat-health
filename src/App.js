@@ -10,6 +10,7 @@ import Consult from './components/consult/Consult';
 import Pharmacy from './components/pharmacy/Pharmacy';
 import Footer from './components/footer/Footer';
 import Checkout from './components/checkout/Checkout';
+import Contacts from './components/contacts/Contacts';
 
 
 const App = () => {
@@ -41,6 +42,10 @@ const App = () => {
      <Route path='/pharmacy'>
       <Navigation />
       <Pharmacy />
+     </Route>
+     <Route path='/contacts'>
+      <Navigation />
+      <Contacts />
      </Route>
      <Route path='/checkout'>
       <Checkout />
