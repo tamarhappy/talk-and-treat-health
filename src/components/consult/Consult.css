@@ -4,23 +4,24 @@
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
-    max-width: 30%;
+    max-width: 100%;
     margin-right: 5px;
+    margin-left: -80px;
 }
 
-.chat_nav {
+/* .chat_nav {
     display: grid;
-    justify-content: left;
-}
+    position: absolute;
+} */
 
 .chat_nav > h2 {
     margin-left: 100px;
-    margin-top: -120px;
+    margin-top: -130px;
 }
 
 .chat_nav > h3 {
     margin-left: 100px;
-    margin-top: -90px;
+    margin-top: -20px;
 }
 
 .chat_nav .rating {
@@ -33,23 +34,27 @@
     width: 150px;
     padding: 8px;
     border-radius: 5px;
-    margin-left: 200px;
+    margin-left: 100px;
+    margin-top: 20px;
     cursor: pointer;
 }
 
-.chat_nav .pfp_1 {
+.chat_nav {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 150px;
     height: fit-content;
     flex-direction: column;
     border-radius: 20px;
     border: 1px solid lightgray;
-    padding: 200px;
+    padding: 130px;
     background: #ebeaea;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 180px;
 }
 
-.chat_nav .pfp_2 {
+/* .chat_nav .pfp_2 {
     width: 150px;
     height: fit-content;
     flex-direction: column;
@@ -84,4 +89,4 @@
     margin-bottom: 20px;
     margin-left: 20px;
 }
-
+ */

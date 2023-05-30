@@ -13,14 +13,18 @@ const Dashboard = () => {
     <div className='dashboard'>
     <div className="sidebar">
         <h1>Category:</h1>
+        <Link to={'/gastro'}>
             <div className="sidebar-item">
             <span className="material-symbols-rounded hover">gastroenterology</span>
                 <span className="sidebar-text">Gastroenterology - Stomach</span>
             </div>
+        </Link>
+        <Link to={'/cardio'}>
             <div className="sidebar-item">
             <span class="material-symbols-rounded hover">cardiology</span>
                 <span className="sidebar-text">Cardiology - Heart</span>
             </div>
+        </Link>
             <div className="sidebar-item">
             <span class="material-symbols-rounded hover">pulmonology</span>
                 <span className="sidebar-text">Pulmonology - Lungs</span>

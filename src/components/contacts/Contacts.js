@@ -10,6 +10,8 @@ const Contacts = () => {
       />
       <div className='e_container'>
         <h1>Emergency Contacts</h1>
+        <h2>Red-Cross: +254722000111</h2>
+        <h2>St.John Ambulance: +254701777897</h2>
       </div>
     </div>
   )

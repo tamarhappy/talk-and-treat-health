@@ -5,7 +5,7 @@ import { auth } from '../../firebase';
 
 const Navigation = ({user}) => {
   const handleAuthentication = () => {
-    if(user) {
+    if(!user) {
       auth.signOut();
     }
   };

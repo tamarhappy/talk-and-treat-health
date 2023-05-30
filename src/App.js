@@ -11,6 +11,8 @@ import Pharmacy from './components/pharmacy/Pharmacy';
 import Footer from './components/footer/Footer';
 import Checkout from './components/checkout/Checkout';
 import Contacts from './components/contacts/Contacts';
+import Gastro from './components/dashboard/gastro/Gastro';
+import Cardio from './components/dashboard/cardio/Cardio';
 
 
 const App = () => {
@@ -31,6 +33,16 @@ const App = () => {
       <Navigation />
       <Dashboard />
      </Route>
+     <Route path='/gastro'>
+      <Navigation />
+      <Gastro />
+      <Footer />
+     </Route>
+     <Route path='/cardio'>
+      <Navigation />
+      <Cardio />
+      <Footer />
+     </Route>
      <Route path='/profile'>
       <Navigation />
       <Profile />
@@ -46,6 +58,7 @@ const App = () => {
      <Route path='/contacts'>
       <Navigation />
       <Contacts />
+      <Footer />
      </Route>
      <Route path='/checkout'>
       <Checkout />
