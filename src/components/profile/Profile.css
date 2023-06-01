@@ -1,5 +1,6 @@
 .profile {
     background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/2ff14972501477.5be9ceade6db8.jpg');
+    margin-top: -22px;
 }
 
 .profile_1 > img {
@@ -9,7 +10,8 @@
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
     max-width: 5%;
-    margin-right: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
     float: right;
 }
 

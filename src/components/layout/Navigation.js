@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom';
 import './Navigation.css';
 import { auth } from '../../firebase';
-//import Dashboard from '../dashboard/Dashboard';
 
 const Navigation = ({user}) => {
   const handleAuthentication = () => {
-    if(!user) {
+    if(user) {
       auth.signOut();
     }
   };
@@ -31,7 +30,6 @@ const Navigation = ({user}) => {
         <div className='nav_options'>
           <Link to={!user && '/login'}>
           <div className='nav_option' onClick={handleAuthentication}>
-              <span className="material-symbols-rounded">account_circle</span>
               <span className='nav_optionOne'>
                 Hello, {!user ? 'Guest' : user.email}
               </span>
@@ -43,11 +41,23 @@ const Navigation = ({user}) => {
               <span className='nav_optionOne'>Checkup</span>
           </div>
           </Link>
-          <Link to={'/contacts'}>
+          <Link to={'/profile'}>
+            <div className='nav_option'>
+                <span className="material-symbols-rounded">account_circle</span>
+                <span className='nav_optionOne'>Profile</span>
+            </div>
+          </Link>
+          <Link to={'/checkout'}>
+            <div className='nav_option'>
+                <span className="material-symbols-rounded">credit_score</span>
+                <span className='nav_optionOne'>Checkout</span>
+            </div>
+          </Link>
+          {/* <Link to={'/contacts'}>
           <div className='nav_option'>
               <span className='material-symbols-rounded'>call</span>
           </div>
-          </Link>
+          </Link> */}
         </div>
         {/* <Dashboard {...{user}} /> */}
     </div>

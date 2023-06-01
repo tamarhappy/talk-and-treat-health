@@ -37,7 +37,7 @@ const Profile = () => {
 
         <div className='profile_3'>
             <div className='sub_one'>
-                <h3>Visit schedule</h3>
+                <h3><a href='https://calendly.com/talkandtreathealth/15min?month=2023-06'>Book an appointment</a></h3>
                 <span class="material-symbols-rounded">notifications</span>
             </div>
             <div className='sub_two'>

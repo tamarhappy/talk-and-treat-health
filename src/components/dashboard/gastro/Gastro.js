@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Gastro.css';
 import Consultstyle from '../../consult/Consultstyle'; 
 
@@ -23,7 +24,9 @@ const Gastro = () => {
             />
             <h2>Dr.Chris Martin</h2>
             <h3>Gastroenterologist</h3>
+            <Link to={'/chat'}>
             <button className='urgent'>Urgent message</button>
+            </Link>
         </div>
     </div>
   )

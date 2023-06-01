@@ -10,10 +10,9 @@ const Checkout = () => {
              alt='' 
             />
             <div>
-                <h3>Hello, email</h3>
-                <h2 className='checkout_title'>Your medicine</h2>
+                <h3>Hello, user</h3>
+                <h2 className='checkout_title'>Total consultation fee</h2>
             </div>
-            <h2 className='checkout_title'>Total consultation</h2>
         </div>
     </div>
   )
