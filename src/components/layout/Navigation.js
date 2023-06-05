@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import './Navigation.css';
 import { auth } from '../../firebase';
+//import SearchBar from './SearchBar';
+// import { useState } from 'react';
 
 const Navigation = ({user}) => {
   const handleAuthentication = () => {
@@ -8,11 +10,6 @@ const Navigation = ({user}) => {
       auth.signOut();
     }
   };
-  // function Navigation({activeProfileId, user, checkup, message, call}) {
-  //   return (
-  //     <Conditions {...{activeProfileId, user}} />
-  //   )
-  // }
 
   return (
     <div className='nav'>
@@ -24,8 +21,8 @@ const Navigation = ({user}) => {
       </Link>
 
         <div className='nav_search'>
-            <input className='nav_input' type='text' />
             <span className='material-symbols-rounded'>search</span>
+            {/* <SearchBar /> */}
         </div>
         <div className='nav_options'>
           <Link to={!user && '/login'}>

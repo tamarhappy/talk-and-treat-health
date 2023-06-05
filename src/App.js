@@ -13,7 +13,7 @@ import Checkout from './components/checkout/Checkout';
 import Contacts from './components/contacts/Contacts';
 import Gastro from './components/dashboard/gastro/Gastro';
 import Cardio from './components/dashboard/cardio/Cardio';
-import Chat from './components/chat/Chat';
+import Payment from './components/payment/Payment';
 
 
 const App = () => {
@@ -24,11 +24,12 @@ const App = () => {
         <Login />
       </Route>
       <Route path='/' exact >
-        <Redirect to='/home' />
+        <Redirect to='/dashboard' />
       </Route>
      <Route path='/home'>
       <Navigation />
       <Home />
+      <Footer />
      </Route>
      <Route path='/dashboard'>
       <Navigation />
@@ -44,9 +45,6 @@ const App = () => {
       <Cardio />
       <Footer />
      </Route>
-     {/* <Route path='*' exact>
-      <Redirect to='https://calendly.com/talkandtreathealth/15min' />
-     </Route> */}
      <Route path='/profile'>
       <Navigation />
       <Profile />
@@ -55,10 +53,6 @@ const App = () => {
      <Route path='/consult'>
       <Navigation />
       <Consult />
-     </Route>
-     <Route path='/chat'>
-      <Navigation />
-      <Chat />
      </Route>
      <Route path='/pharmacy'>
       <Navigation />
@@ -71,6 +65,9 @@ const App = () => {
      </Route>
      <Route path='/checkout'>
       <Checkout />
+     </Route>
+     <Route path='/payments'>
+      <Payment />
      </Route>
     <Footer />
     </Switch>

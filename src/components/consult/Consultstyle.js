@@ -1,7 +1,7 @@
 import React from 'react';
 import './Consultstyle.css';
 
-const Consultstyle = ({rating}) => {
+const Consultstyle = ({rating, price}) => {
   return (
     <div className='rating'>
         {Array(rating)
@@ -9,6 +9,10 @@ const Consultstyle = ({rating}) => {
           .map((_, i) => (
             <p key={i}>⭐</p>
           ))}
+          <p className='price'>
+            <small>$</small>
+            <strong>{price}</strong>
+          </p>
     </div>
   )
 }

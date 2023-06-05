@@ -3,6 +3,7 @@
     margin-top: -80px;
 }
 
-.price {
-    margin-top: 20px;
+.rating > p {
+    margin-top: 30px;
+    margin-left: 2px;
 }

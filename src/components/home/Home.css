@@ -1,14 +1,32 @@
-.home {
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1500px;
+.home_image {
+    margin-left: 700px;
+    margin-top: -250px;
+    z-index: -1;
 }
 
-.home_image {
-    width: 100%;
-    z-index: -1;
-    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+.acc > h2 {
+    margin-left: 360px;
+}
+
+.sign_in {
+    margin-left: 620px;
+    background: rgb(136, 136, 247);
+    background-color: rgb(70, 135, 219);
+    color: white;
+    border-radius: 50px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: white;
+    cursor: pointer;
+}
+
+.about {
+    margin-left: 10px;
+}
+
+.about > p {
+    padding-right: 700px;
 }
 

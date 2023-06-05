@@ -21,6 +21,7 @@
     width: 690px;
     height: 48px;
     border-radius: 8px;
+    border: none;
     display: flex;
     align-items: center;
 }

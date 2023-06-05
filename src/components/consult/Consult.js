@@ -13,11 +13,12 @@ const Consult = () => {
          alt='' 
         />
         <Consultstyle 
+        price={99.99}
         rating={5}
         />
         <h2>Dr.Mark Vanderwaal</h2>
         <h3>Physician</h3>
-        <Link to={'/chat'}>
+        <Link to={'/profile'}>
         <button className='urgent'>Urgent message</button>
         </Link>
       </div>
@@ -27,11 +28,12 @@ const Consult = () => {
          alt='' 
         />
         <Consultstyle 
+        price={99.9}
         rating={5}
         />
         <h2>Dr.Aneesa Park</h2>
         <h3>Pulmonologist</h3>
-        <Link to={'/chat'}>
+        <Link to={'/profile'}>
         <button className='urgent'>Urgent message</button>
         </Link>
       </div>
@@ -41,11 +43,12 @@ const Consult = () => {
          alt='' 
         />
         <Consultstyle 
+        price={99.99}
         rating={5}
         />
         <h2>Dr.Chris Martin</h2>
         <h3>Gastroenterologist</h3>
-        <Link to={'/chat'}>
+        <Link to={'/profile'}>
         <button className='urgent'>Urgent message</button>
         </Link>
       </div>
@@ -54,12 +57,13 @@ const Consult = () => {
          src='https://www.shareicon.net/data/512x512/2016/08/18/813847_people_512x512.png' 
          alt='' 
         />
-        <Consultstyle 
+        <Consultstyle
+        price={99.99} 
         rating={5}
         />
         <h2>Dr.Grace Sterling</h2>
         <h3>Cardiologist</h3>
-        <Link to={'/chat'}>
+        <Link to={'/profile'}>
         <button className='urgent'>Urgent message</button>
         </Link>
       </div>

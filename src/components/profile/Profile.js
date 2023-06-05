@@ -14,9 +14,9 @@ const Profile = () => {
         </div>
         <div className='profile_2'>
             <h1>Profile</h1>
-            <h3>Name: Lima Akinyi</h3>
-            <h3>Age: 18</h3>
-            <h3>Gender: female</h3>
+            <h3>Name:<input className='name' type='text' placeholder='Sarah Olsen' /></h3>
+            <h3>Age:<input className='age' type='number' placeholder='20' /></h3>
+            <h3>Gender:<input className='gender' type='gender' placeholder='Male/Female' /></h3>
 
             <h1>Conditions</h1>
             <h3>Asthma</h3>
