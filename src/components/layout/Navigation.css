@@ -51,13 +51,23 @@
     justify-content: space-evenly;
 }
 
-.nav_option {
+.nav_option1 {
     display: flex;
     flex-direction: row;
     margin-left: 10px;
     margin-right: 10px;
     color: #a6a6a6;
     margin-left: 50px;
+}
+
+.nav_option {
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    color: #a6a6a6;
+    margin-left: 50px;
+    position: relative;
+    text-decoration: none;
 }
 
 .nav_optionOne {
@@ -67,4 +77,23 @@
 .nav_optionTwo {
     font-size: 13px;
     font-weight: 800;
+}
+
+.nav_optionOne {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    font-size: 0.75rem;
+    background-color: #323232;
+    color: white;
+    opacity: 0.78;
+    padding: 5px;
+    white-space: nowrap;
+    border-radius: 5px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.nav_option:hover .nav_optionOne {
+    visibility: visible;
 }

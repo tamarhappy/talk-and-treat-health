@@ -13,6 +13,7 @@ const Consult = () => {
          alt='' 
         />
         <Consultstyle 
+        id='1'
         price={99.99}
         rating={5}
         />
@@ -28,6 +29,7 @@ const Consult = () => {
          alt='' 
         />
         <Consultstyle 
+        id='2'
         price={99.9}
         rating={5}
         />
@@ -42,7 +44,8 @@ const Consult = () => {
          src='https://www.shareicon.net/data/512x512/2016/08/18/813844_people_512x512.png' 
          alt='' 
         />
-        <Consultstyle 
+        <Consultstyle
+        id='3'
         price={99.99}
         rating={5}
         />
@@ -58,6 +61,7 @@ const Consult = () => {
          alt='' 
         />
         <Consultstyle
+        id='4'
         price={99.99} 
         rating={5}
         />

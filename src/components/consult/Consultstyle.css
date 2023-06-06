@@ -7,3 +7,14 @@
     margin-top: 30px;
     margin-left: 2px;
 }
+
+.urgent {
+    color: rgb(75, 135, 247);
+    font-weight: bolder;
+    width: 150px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-top: 20px;
+    cursor: pointer;
+}

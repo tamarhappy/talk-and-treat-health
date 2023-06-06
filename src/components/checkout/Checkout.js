@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './Checkout.css';
+import FeeContext from '../context/feeContext';
+import Subtotal from '../subtotal/Subtotal';
+import CheckoutProduct from './CheckoutProduct';
 
 const Checkout = () => {
+  const feeContext = useContext(FeeContext);
+  const { basket, user } = feeContext;
+
   return (
     <div className='checkout'>
         <div className='checkout_add'>
@@ -10,10 +16,19 @@ const Checkout = () => {
              alt='' 
             />
             <div>
-                <h3>Hello, user</h3>
+                <h3>Hello, {user?.email}</h3>
                 <h2 className='checkout_title'>Total consultation fee</h2>
+
+                {basket.map(item => ( <CheckoutProduct 
+                  key={item.id}
+                  id={item.id}
+                  price={item.price}
+                  rating={item.rating}
+                />
+                ))}
             </div>
         </div>
+        <div className='checkout_right'><Subtotal /></div>
     </div>
   )
 };

@@ -1,0 +1,22 @@
+.checkout_product {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.checkout_product_info {
+    padding-left: 20px;
+}
+
+.checkout_product_info > button {
+    background: rgb(70, 135, 219);
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: white;
+    color: white;
+}
+
+.checkout_product_rating {
+    display: flex;
+}
+

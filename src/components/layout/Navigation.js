@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom';
 import './Navigation.css';
+import FeeContext from '../context/feeContext';
 import { auth } from '../../firebase';
-//import SearchBar from './SearchBar';
-// import { useState } from 'react';
+import { useContext } from 'react';
 
-const Navigation = ({user}) => {
+const Navigation = () => {
+  const feeContext = useContext(FeeContext);
+  const { basket, user } = feeContext;
+
   const handleAuthentication = () => {
     if(user) {
       auth.signOut();
@@ -48,6 +51,13 @@ const Navigation = ({user}) => {
             <div className='nav_option'>
                 <span className="material-symbols-rounded">credit_score</span>
                 <span className='nav_optionOne'>Checkout</span>
+            </div>
+          </Link>
+          <Link to='/checkout'>
+            <div className='header_optionBasket'>
+                      <span className='header_optionTwo header_basketCount'>
+                        {basket?.length}
+                      </span>
             </div>
           </Link>
           {/* <Link to={'/contacts'}>
