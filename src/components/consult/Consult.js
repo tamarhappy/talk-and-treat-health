@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Consult.css';
 import Consultstyle from './Consultstyle';
 
@@ -19,9 +18,9 @@ const Consult = () => {
         />
         <h2>Dr.Mark Vanderwaal</h2>
         <h3>Physician</h3>
-        <Link to={'/profile'}>
+        {/* <Link to={'/profile'}>
         <button className='urgent'>Urgent message</button>
-        </Link>
+        </Link> */}
       </div>
       <div className='chat_nav'>
         <img className='pfp_2' 
@@ -35,9 +34,9 @@ const Consult = () => {
         />
         <h2>Dr.Aneesa Park</h2>
         <h3>Pulmonologist</h3>
-        <Link to={'/profile'}>
+        {/* <Link to={'/profile'}>
         <button className='urgent'>Urgent message</button>
-        </Link>
+        </Link> */}
       </div>
       <div className='chat_nav'>
         <img className='pfp_3' 
@@ -51,9 +50,9 @@ const Consult = () => {
         />
         <h2>Dr.Chris Martin</h2>
         <h3>Gastroenterologist</h3>
-        <Link to={'/profile'}>
+        {/* <Link to={'/profile'}>
         <button className='urgent'>Urgent message</button>
-        </Link>
+        </Link> */}
       </div>
       <div className='chat_nav'>
         <img className='pfp_4' 
@@ -67,9 +66,9 @@ const Consult = () => {
         />
         <h2>Dr.Grace Sterling</h2>
         <h3>Cardiologist</h3>
-        <Link to={'/profile'}>
+        {/* <Link to={'/profile'}>
         <button className='urgent'>Urgent message</button>
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import { useReducer } from "react";
 import feeContext from "./feeContext";
 import { feeReducer } from "./feeReducer"
 
-export const ShoppingState = (props) => {
+export const FeeState = ({children}) => {
     const initialState = {basket: [], user: null};
     const [state, dispatch] = useReducer(feeReducer, initialState);
 
@@ -46,7 +46,7 @@ export const ShoppingState = (props) => {
         emptyBasket,
     }}
     >
-        {props.children}
+        {children}
     </feeContext.Provider>
     );
 };

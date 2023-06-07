@@ -1,7 +1,7 @@
-//import React, { useContext, useEffect } from 'react';
+import React, { useContext, useEffect } from 'react';
 import './App.css';
 import { Redirect, Route, Switch } from 'react-router-dom';
-//import { auth } from './firebase';
+import { auth } from './firebase';
 import Navigation from './components/layout/Navigation';
 import Home from './components/home/Home';
 import Login from './components/login/Login';
@@ -15,24 +15,24 @@ import Contacts from './components/contacts/Contacts';
 import Gastro from './components/dashboard/gastro/Gastro';
 import Cardio from './components/dashboard/cardio/Cardio';
 import Payment from './components/payment/Payment';
-//import FeeContext from './components/context/feeContext';
+import FeeContext from './components/context/feeContext';
 
 
 const App = () => {
-  // const feeContext = useContext(FeeContext);
-  // const {setUser} = feeContext;
+   const feeContext = useContext(FeeContext);
+   const {setUser} = feeContext;
 
-  // useEffect(() => {
-  //   auth.onAuthStateChanged((authUser) => {
-  //     console.log('User is ->', authUser);
+   useEffect(() => {
+     auth.onAuthStateChanged((authUser) => {
+       console.log('User is ->', authUser);
 
-  //     if(authUser) {
-  //       setUser(authUser);
-  //     } else {
-  //       setUser(null);
-  //     }
-  //   });
-  // }, [setUser]);
+       if(authUser) {
+        setUser(authUser);
+       } else {
+         setUser(null);
+       }
+     });
+   }, []);
 
    return (
      <div>

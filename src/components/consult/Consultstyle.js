@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import './Consultstyle.css';
+import { Link } from 'react-router-dom';
 import FeeContext from '../context/feeContext';
 
 const Consultstyle = ({id, rating, price}) => {
@@ -23,7 +24,9 @@ const Consultstyle = ({id, rating, price}) => {
               <strong>{price}</strong>
             </p>
       </div>
+      <Link to='/profile'>
       <button className='urgent' onClick={addToBasketHandler}>Urgent message</button>
+      </Link>
     </div>
   )
 }

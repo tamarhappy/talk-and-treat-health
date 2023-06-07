@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-between;
     width: 300px;
-    height: 100px;
+    height: 166px;
     padding: 20px;
     background-color: #f3f3f3;
     border: 1px solid #dddddd;
@@ -19,12 +19,12 @@
 }
 
 .subtotal > button {
-    background: #f0c14b;
+    background: rgb(70, 135, 219);
     border-radius: 2px;
     width: 100%;
     height: 30px;
     border: 1px solid;
     margin-top: 10px;
-    border-color: rgb(70, 135, 219);
+    border-color: white;
     color: white;
 }

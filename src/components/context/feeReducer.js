@@ -1,4 +1,4 @@
-export const shoppingReducer = (state, action) => {
+export const feeReducer = (state, action) => {
     switch (action.type) {
         case 'ADD_TO_BASKET':
             return {

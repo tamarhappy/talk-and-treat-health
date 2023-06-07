@@ -28,7 +28,9 @@ const Checkout = () => {
                 ))}
             </div>
         </div>
-        <div className='checkout_right'><Subtotal /></div>
+        <div className='checkout_right'>
+          <Subtotal />
+        </div>
     </div>
   )
 };
