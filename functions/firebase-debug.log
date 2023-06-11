@@ -1,0 +1,505 @@
+[debug] [2023-06-11T20:55:30.232Z] ----------------------------------------------------------------------
+[debug] [2023-06-11T20:55:30.250Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-06-11T20:55:30.251Z] CLI Version:   12.0.0
+[debug] [2023-06-11T20:55:30.252Z] Platform:      win32
+[debug] [2023-06-11T20:55:30.252Z] Node Version:  v19.9.0
+[debug] [2023-06-11T20:55:30.253Z] Time:          Sun Jun 11 2023 23:55:30 GMT+0300 (East Africa Time)
+[debug] [2023-06-11T20:55:30.254Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-11T20:55:30.678Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-11T20:55:30.680Z] > authorizing via signed-in user (tamiseneyia11@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-06-11T20:55:30.743Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-06-11T20:55:30.744Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-06-11T20:55:30.815Z] [hub] writing locator at C:\Users\HAPPY\AppData\Local\Temp\hub-talk-treat-project.json
+[debug] [2023-06-11T20:55:30.920Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-06-11T20:55:30.921Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-06-11T20:55:30.921Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-06-11T20:55:31.015Z] defaultcredentials: writing to file C:\Users\HAPPY\AppData\Roaming\firebase\tamiseneyia11_gmail_com_application_default_credentials.json
+[debug] [2023-06-11T20:55:31.032Z] Setting GAC to C:\Users\HAPPY\AppData\Roaming\firebase\tamiseneyia11_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\HAPPY\\AppData\\Roaming\\firebase\\tamiseneyia11_gmail_com_application_default_credentials.json"}}
+[debug] [2023-06-11T20:55:31.034Z] > refreshing access token with scopes: []
+[debug] [2023-06-11T20:55:31.038Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-06-11T20:55:31.038Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-11T20:55:31.452Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-06-11T20:55:31.452Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-11T20:55:31.468Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/talk-treat-project/adminSdkConfig [none]
+[debug] [2023-06-11T20:55:32.022Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/talk-treat-project/adminSdkConfig 200
+[debug] [2023-06-11T20:55:32.023Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/talk-treat-project/adminSdkConfig {"projectId":"talk-treat-project","storageBucket":"talk-treat-project.appspot.com"}
+[info] i  ui: downloading ui-v1.11.6.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.11.6.zip..."}}
+[debug] [2023-06-11T20:55:32.519Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.6.zip 
+[debug] [2023-06-11T20:55:33.184Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.6.zip 200
+[debug] [2023-06-11T20:55:33.184Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.11.6.zip [stream]
+[debug] [2023-06-11T20:55:38.698Z] Data is 3063444
+[debug] [2023-06-11T20:55:38.698Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-06-11T20:55:38.699Z] [unzip] Processing entry: client\
+[debug] [2023-06-11T20:55:38.699Z] [unzip] mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\
+[debug] [2023-06-11T20:55:38.700Z] [unzip] Entry: client/favicon.ico (compressed_size=2497 bytes, uncompressed_size=7406 bytes)
+[debug] [2023-06-11T20:55:38.700Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2023-06-11T20:55:38.700Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client
+[debug] [2023-06-11T20:55:38.700Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\favicon.ico
+[debug] [2023-06-11T20:55:38.716Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=7231 bytes, uncompressed_size=7367 bytes)
+[debug] [2023-06-11T20:55:38.716Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2023-06-11T20:55:38.716Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client
+[debug] [2023-06-11T20:55:38.717Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\apple-touch-icon.png
+[debug] [2023-06-11T20:55:38.720Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=16987 bytes, uncompressed_size=18186 bytes)
+[debug] [2023-06-11T20:55:38.720Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2023-06-11T20:55:38.720Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client
+[debug] [2023-06-11T20:55:38.721Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\android-chrome-512x512.png
+[debug] [2023-06-11T20:55:38.724Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-06-11T20:55:38.724Z] [unzip] Processing entry: client\assets\
+[debug] [2023-06-11T20:55:38.724Z] [unzip] mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\
+[debug] [2023-06-11T20:55:38.726Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-06-11T20:55:38.726Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2023-06-11T20:55:38.726Z] [unzip] mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\extensions\
+[debug] [2023-06-11T20:55:38.727Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2023-06-11T20:55:38.727Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2023-06-11T20:55:38.727Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\extensions
+[debug] [2023-06-11T20:55:38.727Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\extensions\default-extension.png
+[debug] [2023-06-11T20:55:38.729Z] [unzip] Entry: client/assets/index.85584c3f.js (compressed_size=526096 bytes, uncompressed_size=1859818 bytes)
+[debug] [2023-06-11T20:55:38.729Z] [unzip] Processing entry: client\assets\index.85584c3f.js
+[debug] [2023-06-11T20:55:38.729Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets
+[debug] [2023-06-11T20:55:38.730Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\index.85584c3f.js
+[debug] [2023-06-11T20:55:38.750Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-06-11T20:55:38.750Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2023-06-11T20:55:38.750Z] [unzip] mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons\
+[debug] [2023-06-11T20:55:38.751Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2023-06-11T20:55:38.751Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2023-06-11T20:55:38.751Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons
+[debug] [2023-06-11T20:55:38.752Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2023-06-11T20:55:38.760Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2023-06-11T20:55:38.760Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2023-06-11T20:55:38.760Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons
+[debug] [2023-06-11T20:55:38.761Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2023-06-11T20:55:38.763Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2023-06-11T20:55:38.763Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2023-06-11T20:55:38.763Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons
+[debug] [2023-06-11T20:55:38.764Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2023-06-11T20:55:38.770Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2023-06-11T20:55:38.770Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2023-06-11T20:55:38.770Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons
+[debug] [2023-06-11T20:55:38.771Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2023-06-11T20:55:38.774Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2023-06-11T20:55:38.775Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2023-06-11T20:55:38.775Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons
+[debug] [2023-06-11T20:55:38.776Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2023-06-11T20:55:38.780Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2023-06-11T20:55:38.780Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2023-06-11T20:55:38.780Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons
+[debug] [2023-06-11T20:55:38.781Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2023-06-11T20:55:38.783Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2023-06-11T20:55:38.783Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2023-06-11T20:55:38.783Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons
+[debug] [2023-06-11T20:55:38.784Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2023-06-11T20:55:38.789Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2023-06-11T20:55:38.789Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2023-06-11T20:55:38.789Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons
+[debug] [2023-06-11T20:55:38.790Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons\auth_service_github.svg
+[debug] [2023-06-11T20:55:38.792Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2023-06-11T20:55:38.792Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2023-06-11T20:55:38.792Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons
+[debug] [2023-06-11T20:55:38.793Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2023-06-11T20:55:38.795Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2023-06-11T20:55:38.795Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2023-06-11T20:55:38.795Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons
+[debug] [2023-06-11T20:55:38.796Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons\auth_service_google.svg
+[debug] [2023-06-11T20:55:38.798Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2023-06-11T20:55:38.799Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2023-06-11T20:55:38.799Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons
+[debug] [2023-06-11T20:55:38.799Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons\auth_service_email.svg
+[debug] [2023-06-11T20:55:38.801Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2023-06-11T20:55:38.802Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2023-06-11T20:55:38.802Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons
+[debug] [2023-06-11T20:55:38.803Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2023-06-11T20:55:38.809Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2023-06-11T20:55:38.809Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2023-06-11T20:55:38.810Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons
+[debug] [2023-06-11T20:55:38.810Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2023-06-11T20:55:38.812Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-06-11T20:55:38.812Z] [unzip] Processing entry: client\assets\img\
+[debug] [2023-06-11T20:55:38.812Z] [unzip] mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\img\
+[debug] [2023-06-11T20:55:38.829Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2023-06-11T20:55:38.830Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2023-06-11T20:55:38.830Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\img
+[debug] [2023-06-11T20:55:38.830Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\img\database.png
+[debug] [2023-06-11T20:55:38.833Z] [unzip] Entry: client/assets/index.b9383ce5.css (compressed_size=37605 bytes, uncompressed_size=321268 bytes)
+[debug] [2023-06-11T20:55:38.834Z] [unzip] Processing entry: client\assets\index.b9383ce5.css
+[debug] [2023-06-11T20:55:38.834Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets
+[debug] [2023-06-11T20:55:38.834Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\index.b9383ce5.css
+[debug] [2023-06-11T20:55:38.842Z] [unzip] Entry: client/assets/index.85584c3f.js.map (compressed_size=1778028 bytes, uncompressed_size=7960238 bytes)
+[debug] [2023-06-11T20:55:38.842Z] [unzip] Processing entry: client\assets\index.85584c3f.js.map
+[debug] [2023-06-11T20:55:38.842Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets
+[debug] [2023-06-11T20:55:38.843Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\assets\index.85584c3f.js.map
+[debug] [2023-06-11T20:55:38.957Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=838 bytes, uncompressed_size=1504 bytes)
+[debug] [2023-06-11T20:55:38.957Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2023-06-11T20:55:38.957Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client
+[debug] [2023-06-11T20:55:38.959Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\safari-pinned-tab.svg
+[debug] [2023-06-11T20:55:38.961Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=5406 bytes, uncompressed_size=5723 bytes)
+[debug] [2023-06-11T20:55:38.961Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2023-06-11T20:55:38.961Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client
+[debug] [2023-06-11T20:55:38.961Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\mstile-150x150.png
+[debug] [2023-06-11T20:55:38.963Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2023-06-11T20:55:38.964Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2023-06-11T20:55:38.964Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client
+[debug] [2023-06-11T20:55:38.964Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\browserconfig.xml
+[debug] [2023-06-11T20:55:38.971Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2023-06-11T20:55:38.971Z] [unzip] Processing entry: client\robots.txt
+[debug] [2023-06-11T20:55:38.971Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client
+[debug] [2023-06-11T20:55:38.972Z] [unzip] Writing file: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\robots.txt
+[debug] [2023-06-11T20:55:38.973Z] [unzip] Entry: client/index.html (compressed_size=1363 bytes, uncompressed_size=3064 bytes)
+[debug] [2023-06-11T20:55:38.974Z] [unzip] Processing entry: client\index.html
+[debug] [2023-06-11T20:55:38.974Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client
+[debug] [2023-06-11T20:55:38.976Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\index.html
+[debug] [2023-06-11T20:55:38.978Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=757 bytes, uncompressed_size=777 bytes)
+[debug] [2023-06-11T20:55:38.979Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2023-06-11T20:55:38.979Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client
+[debug] [2023-06-11T20:55:38.979Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\favicon-16x16.png
+[debug] [2023-06-11T20:55:38.981Z] [unzip] Entry: client/manifest.json (compressed_size=246 bytes, uncompressed_size=551 bytes)
+[debug] [2023-06-11T20:55:38.981Z] [unzip] Processing entry: client\manifest.json
+[debug] [2023-06-11T20:55:38.981Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client
+[debug] [2023-06-11T20:55:38.981Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\manifest.json
+[debug] [2023-06-11T20:55:38.983Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=1175 bytes, uncompressed_size=1175 bytes)
+[debug] [2023-06-11T20:55:38.984Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2023-06-11T20:55:38.984Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client
+[debug] [2023-06-11T20:55:38.984Z] [unzip] Writing file: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\favicon-32x32.png
+[debug] [2023-06-11T20:55:38.985Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=7602 bytes, uncompressed_size=7834 bytes)
+[debug] [2023-06-11T20:55:38.986Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2023-06-11T20:55:38.986Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client
+[debug] [2023-06-11T20:55:38.986Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\client\android-chrome-192x192.png
+[debug] [2023-06-11T20:55:38.987Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2023-06-11T20:55:38.988Z] [unzip] Processing entry: server\
+[debug] [2023-06-11T20:55:38.988Z] [unzip] mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\server\
+[debug] [2023-06-11T20:55:38.988Z] [unzip] Entry: server/server.js (compressed_size=343746 bytes, uncompressed_size=1346374 bytes)
+[debug] [2023-06-11T20:55:38.988Z] [unzip] Processing entry: server\server.js
+[debug] [2023-06-11T20:55:38.988Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\server
+[debug] [2023-06-11T20:55:38.989Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\server\server.js
+[debug] [2023-06-11T20:55:39.000Z] [unzip] Entry: server/server.js.map (compressed_size=289157 bytes, uncompressed_size=1325651 bytes)
+[debug] [2023-06-11T20:55:39.000Z] [unzip] Processing entry: server\server.js.map
+[debug] [2023-06-11T20:55:39.000Z] [unzip] else mkdir: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\server
+[debug] [2023-06-11T20:55:39.008Z] [unzip] deflating: C:\Users\HAPPY\.cache\firebase\emulators\ui-v1.11.6\server\server.js.map
+[debug] [2023-06-11T20:55:39.042Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-06-11T20:55:39.043Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-06-11T20:55:39.043Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\HAPPY\\.cache\\firebase\\emulators\\ui-v1.11.6\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\HAPPY\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.6\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-06-11T20:55:39.457Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-06-11T20:55:39.457Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\" for Cloud Functions..."}}
+[debug] [2023-06-11T20:55:39.649Z] Validating nodejs source
+[debug] [2023-06-11T20:55:49.754Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\Windows\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1117:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:55:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:76:32)
+    at Delegate.validate (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:297:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:326:34)
+    at async FunctionsEmulator.connect (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:263:13)
+    at async Object.startAll (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js:556:13)
+[debug] [2023-06-11T20:55:49.755Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^12.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-11T20:55:49.756Z] Building nodejs source
+[debug] [2023-06-11T20:55:49.756Z] Failed to find version of module node: reached end of search path C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "19". Using node@19 from host. 
+[debug] [2023-06-11T20:55:49.765Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-11T20:55:49.781Z] Found firebase-functions binary at 'C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-11T20:55:53.343Z] Serving at port 8413
+
+[debug] [2023-06-11T20:55:54.360Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-11T20:55:54.371Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: . {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: ."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-06-11T21:06:26.829Z] File C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-06-11T21:06:26.946Z] File C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-06-11T21:06:28.080Z] Validating nodejs source
+[debug] [2023-06-11T21:06:38.330Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\Windows\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1117:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:55:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:76:32)
+    at Delegate.validate (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:297:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:326:34)
+[debug] [2023-06-11T21:06:38.351Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^12.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-11T21:06:38.352Z] Building nodejs source
+[debug] [2023-06-11T21:06:38.356Z] Failed to find version of module node: reached end of search path C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "19". Using node@19 from host. 
+[debug] [2023-06-11T21:06:38.405Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-11T21:06:38.483Z] Found firebase-functions binary at 'C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-11T21:06:40.277Z] Serving at port 8346
+
+[debug] [2023-06-11T21:06:42.047Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-11T21:06:42.067Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[info] +  functions[us-central1-api]: http function initialized (http://127.0.0.1:5001/talk-treat-project/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/talk-treat-project/us-central1/api)."}}
+[debug] [2023-06-11T21:06:49.655Z] File C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\package-lock.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\package-lock.json changed, reloading triggers"}}
+[debug] [2023-06-11T21:06:50.743Z] Validating nodejs source
+[debug] [2023-06-11T21:07:00.349Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^12.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-11T21:07:00.349Z] Building nodejs source
+[debug] [2023-06-11T21:07:00.349Z] Failed to find version of module node: reached end of search path C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "19". Using node@19 from host. 
+[debug] [2023-06-11T21:07:00.354Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-11T21:07:00.370Z] Found firebase-functions binary at 'C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-11T21:07:02.118Z] Serving at port 8513
+
+[debug] [2023-06-11T21:07:03.716Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-11T21:07:03.729Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-06-11T21:29:02.793Z] Functions emulator received unknown request at path /
+[debug] [2023-06-11T21:29:03.074Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2023-06-11T21:30:06.076Z] Functions emulator received unknown request at path /
+[debug] [2023-06-11T21:32:51.083Z] [work-queue] {"queuedWork":["/talk-treat-project/us-central1/api-2023-06-11T21:32:51.049Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-11T21:32:51.089Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/talk-treat-project/us-central1/api-2023-06-11T21:32:51.049Z"],"workRunningCount":1}
+[debug] [2023-06-11T21:32:51.111Z] Accepted request GET /talk-treat-project/us-central1/api --> us-central1-api
+[debug] [2023-06-11T21:32:51.469Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-11T21:32:51.483Z] [functions] Got req.url=/talk-treat-project/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/talk-treat-project/us-central1/api, mapping to path=/"}}
+[debug] [2023-06-11T21:32:51.804Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-06-11T21:32:51.826Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-06-11T21:32:59.830Z] [runtime-status] [12852] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12852] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"C:\\\\Users\\\\HAPPY\\\\OneDrive\\\\Desktop\\\\react-project\\\\health-app\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-06-11T21:32:59.838Z] [runtime-status] [12852] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12852] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"C:\\\\Users\\\\HAPPY\\\\OneDrive\\\\Desktop\\\\react-project\\\\health-app\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-11T21:32:59.841Z] [runtime-status] [12852] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12852] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-06-11T21:32:59.848Z] [runtime-status] [12852] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12852] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"C:\\\\Users\\\\HAPPY\\\\OneDrive\\\\Desktop\\\\react-project\\\\health-app\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-11T21:33:01.642Z] [runtime-status] [12852] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12852] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-06-11T21:33:01.645Z] [runtime-status] [12852] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.0","resolution":"C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12852] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"C:\\\\Users\\\\HAPPY\\\\OneDrive\\\\Desktop\\\\react-project\\\\health-app\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-06-11T21:33:01.647Z] [runtime-status] [12852] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12852] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"C:\\\\Users\\\\HAPPY\\\\OneDrive\\\\Desktop\\\\react-project\\\\health-app\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-11T21:33:01.650Z] [runtime-status] [12852] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12852] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"C:\\\\Users\\\\HAPPY\\\\OneDrive\\\\Desktop\\\\react-project\\\\health-app\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-06-11T21:33:01.659Z] [runtime-status] [12852] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12852] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"C:\\\\Users\\\\HAPPY\\\\OneDrive\\\\Desktop\\\\react-project\\\\health-app\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-11T21:33:01.662Z] [runtime-status] [12852] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.9.0","resolution":"C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12852] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"C:\\\\Users\\\\HAPPY\\\\OneDrive\\\\Desktop\\\\react-project\\\\health-app\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-06-11T21:33:03.599Z] [runtime-status] [12852] Functions runtime initialized. {"cwd":"C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions","node_version":"19.9.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12852] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\HAPPY\\\\OneDrive\\\\Desktop\\\\react-project\\\\health-app\\\\functions\",\"node_version\":\"19.9.0\"}"}}
+[debug] [2023-06-11T21:33:03.600Z] [runtime-status] [12852] Listening to port: \\?\pipe\fire_emu_7e55d8a61c92cc37 {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [12852] Listening to port: \\\\?\\pipe\\fire_emu_7e55d8a61c92cc37"}}
+[debug] [2023-06-11T21:33:03.646Z] [worker-us-central1-api-99dbfc76-a4de-4dae-8de6-4fbca4c43ea6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-99dbfc76-a4de-4dae-8de6-4fbca4c43ea6]: IDLE"}}
+[debug] [2023-06-11T21:33:03.650Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-06-11T21:33:03.680Z] [worker-us-central1-api-99dbfc76-a4de-4dae-8de6-4fbca4c43ea6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-99dbfc76-a4de-4dae-8de6-4fbca4c43ea6]: BUSY"}}
+[debug] [2023-06-11T21:33:03.703Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 23.8794ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 23.8794ms"}}
+[debug] [2023-06-11T21:33:03.706Z] [worker-us-central1-api-99dbfc76-a4de-4dae-8de6-4fbca4c43ea6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-99dbfc76-a4de-4dae-8de6-4fbca4c43ea6]: IDLE"}}
+[debug] [2023-06-11T21:33:03.707Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-11T21:33:03.708Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-11T21:33:03.709Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] >  RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: 2000 {"user":"RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: 2000","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: 2000"}}
+[info] >      at new NodeError (node:internal/errors:399:5) {"user":"    at new NodeError (node:internal/errors:399:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at new NodeError (node:internal/errors:399:5)"}}
+[info] >      at ServerResponse.writeHead (node:_http_server:339:11) {"user":"    at ServerResponse.writeHead (node:_http_server:339:11)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at ServerResponse.writeHead (node:_http_server:339:11)"}}
+[info] >      at ServerResponse._implicitHeader (node:_http_server:330:8) {"user":"    at ServerResponse._implicitHeader (node:_http_server:330:8)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at ServerResponse._implicitHeader (node:_http_server:330:8)"}}
+[info] >      at write_ (node:_http_outgoing:911:9) {"user":"    at write_ (node:_http_outgoing:911:9)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at write_ (node:_http_outgoing:911:9)"}}
+[info] >      at ServerResponse.end (node:_http_outgoing:1018:5) {"user":"    at ServerResponse.end (node:_http_outgoing:1018:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at ServerResponse.end (node:_http_outgoing:1018:5)"}}
+[info] >      at ServerResponse.send (C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\node_modules\express\lib\response.js:232:10) {"user":"    at ServerResponse.send (C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\express\\lib\\response.js:232:10)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at ServerResponse.send (C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\express\\lib\\response.js:232:10)"}}
+[info] >      at C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\index.js:18:45 {"user":"    at C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\index.js:18:45","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\index.js:18:45"}}
+[info] >      at Layer.handle [as handle_request] (C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\node_modules\express\lib\router\layer.js:95:5) {"user":"    at Layer.handle [as handle_request] (C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\express\\lib\\router\\layer.js:95:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Layer.handle [as handle_request] (C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\express\\lib\\router\\layer.js:95:5)"}}
+[info] >      at next (C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\node_modules\express\lib\router\route.js:144:13) {"user":"    at next (C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\express\\lib\\router\\route.js:144:13)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at next (C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\express\\lib\\router\\route.js:144:13)"}}
+[info] >      at Route.dispatch (C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\node_modules\express\lib\router\route.js:114:3) {"user":"    at Route.dispatch (C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\express\\lib\\router\\route.js:114:3)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Route.dispatch (C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\express\\lib\\router\\route.js:114:3)"}}
+[debug] [2023-06-11T21:33:32.569Z] File C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-06-11T21:33:33.689Z] Validating nodejs source
+[debug] [2023-06-11T21:33:44.245Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\Windows\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1117:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:55:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:76:32)
+    at Delegate.validate (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:297:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\HAPPY\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:326:34)
+[debug] [2023-06-11T21:33:44.334Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^12.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-11T21:33:44.336Z] Building nodejs source
+[debug] [2023-06-11T21:33:44.338Z] Failed to find version of module node: reached end of search path C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "19". Using node@19 from host. 
+[debug] [2023-06-11T21:33:44.498Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-11T21:33:44.525Z] Found firebase-functions binary at 'C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-11T21:33:51.555Z] Serving at port 8188
+
+[debug] [2023-06-11T21:33:52.322Z] [work-queue] {"queuedWork":["/talk-treat-project/us-central1/api-2023-06-11T21:33:52.322Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-11T21:33:52.323Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/talk-treat-project/us-central1/api-2023-06-11T21:33:52.322Z"],"workRunningCount":1}
+[debug] [2023-06-11T21:33:52.323Z] Accepted request GET /talk-treat-project/us-central1/api --> us-central1-api
+[debug] [2023-06-11T21:33:52.335Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-11T21:33:52.336Z] [functions] Got req.url=/talk-treat-project/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/talk-treat-project/us-central1/api, mapping to path=/"}}
+[debug] [2023-06-11T21:33:52.336Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-06-11T21:33:52.407Z] [worker-us-central1-api-99dbfc76-a4de-4dae-8de6-4fbca4c43ea6]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-99dbfc76-a4de-4dae-8de6-4fbca4c43ea6]: BUSY"}}
+[debug] [2023-06-11T21:33:52.423Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 15.5679ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 15.5679ms"}}
+[debug] [2023-06-11T21:33:52.425Z] [worker-us-central1-api-99dbfc76-a4de-4dae-8de6-4fbca4c43ea6]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-99dbfc76-a4de-4dae-8de6-4fbca4c43ea6]: IDLE"}}
+[debug] [2023-06-11T21:33:52.425Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-11T21:33:52.425Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-11T21:33:52.425Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] >  RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: 2000 {"user":"RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: 2000","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: 2000"}}
+[info] >      at new NodeError (node:internal/errors:399:5) {"user":"    at new NodeError (node:internal/errors:399:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at new NodeError (node:internal/errors:399:5)"}}
+[info] >      at ServerResponse.writeHead (node:_http_server:339:11) {"user":"    at ServerResponse.writeHead (node:_http_server:339:11)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at ServerResponse.writeHead (node:_http_server:339:11)"}}
+[info] >      at ServerResponse._implicitHeader (node:_http_server:330:8) {"user":"    at ServerResponse._implicitHeader (node:_http_server:330:8)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at ServerResponse._implicitHeader (node:_http_server:330:8)"}}
+[info] >      at write_ (node:_http_outgoing:911:9) {"user":"    at write_ (node:_http_outgoing:911:9)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at write_ (node:_http_outgoing:911:9)"}}
+[info] >      at ServerResponse.end (node:_http_outgoing:1018:5) {"user":"    at ServerResponse.end (node:_http_outgoing:1018:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at ServerResponse.end (node:_http_outgoing:1018:5)"}}
+[info] >      at ServerResponse.send (C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\node_modules\express\lib\response.js:232:10) {"user":"    at ServerResponse.send (C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\express\\lib\\response.js:232:10)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at ServerResponse.send (C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\express\\lib\\response.js:232:10)"}}
+[info] >      at C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\index.js:18:45 {"user":"    at C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\index.js:18:45","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\index.js:18:45"}}
+[info] >      at Layer.handle [as handle_request] (C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\node_modules\express\lib\router\layer.js:95:5) {"user":"    at Layer.handle [as handle_request] (C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\express\\lib\\router\\layer.js:95:5)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Layer.handle [as handle_request] (C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\express\\lib\\router\\layer.js:95:5)"}}
+[info] >      at next (C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\node_modules\express\lib\router\route.js:144:13) {"user":"    at next (C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\express\\lib\\router\\route.js:144:13)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at next (C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\express\\lib\\router\\route.js:144:13)"}}
+[info] >      at Route.dispatch (C:\Users\HAPPY\OneDrive\Desktop\react-project\health-app\functions\node_modules\express\lib\router\route.js:114:3) {"user":"    at Route.dispatch (C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\express\\lib\\router\\route.js:114:3)","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m     at Route.dispatch (C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\express\\lib\\router\\route.js:114:3)"}}
+[debug] [2023-06-11T21:33:53.428Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-11T21:33:53.454Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
+[debug] [2023-06-11T21:33:53.514Z] [worker-pool] Shutting down IDLE worker (us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-api)"}}
+[debug] [2023-06-11T21:33:53.514Z] [worker-us-central1-api-99dbfc76-a4de-4dae-8de6-4fbca4c43ea6]: FINISHING {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-99dbfc76-a4de-4dae-8de6-4fbca4c43ea6]: FINISHING"}}
+[debug] [2023-06-11T21:33:53.597Z] [worker-us-central1-api-99dbfc76-a4de-4dae-8de6-4fbca4c43ea6]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-99dbfc76-a4de-4dae-8de6-4fbca4c43ea6]: exited"}}
+[debug] [2023-06-11T21:33:53.600Z] [worker-us-central1-api-99dbfc76-a4de-4dae-8de6-4fbca4c43ea6]: FINISHED {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-99dbfc76-a4de-4dae-8de6-4fbca4c43ea6]: FINISHED"}}
+[debug] [2023-06-11T21:34:32.597Z] [work-queue] {"queuedWork":["/talk-treat-project/us-central1/api-2023-06-11T21:34:32.597Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-11T21:34:32.598Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/talk-treat-project/us-central1/api-2023-06-11T21:34:32.597Z"],"workRunningCount":1}
+[debug] [2023-06-11T21:34:32.598Z] Accepted request GET /talk-treat-project/us-central1/api --> us-central1-api
+[debug] [2023-06-11T21:34:32.611Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-11T21:34:32.613Z] [functions] Got req.url=/talk-treat-project/us-central1/api, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/talk-treat-project/us-central1/api, mapping to path=/"}}
+[debug] [2023-06-11T21:34:32.614Z] [worker-pool] Cleaned up workers for us-central1-api: 1 --> 0 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Cleaned up workers for us-central1-api: 1 --> 0"}}
+[debug] [2023-06-11T21:34:32.707Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2023-06-11T21:34:32.708Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2023-06-11T21:34:39.143Z] [runtime-status] [2040] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2040] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"C:\\\\Users\\\\HAPPY\\\\OneDrive\\\\Desktop\\\\react-project\\\\health-app\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-06-11T21:34:39.154Z] [runtime-status] [2040] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2040] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"C:\\\\Users\\\\HAPPY\\\\OneDrive\\\\Desktop\\\\react-project\\\\health-app\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-11T21:34:39.155Z] [runtime-status] [2040] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2040] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-06-11T21:34:39.158Z] [runtime-status] [2040] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2040] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"C:\\\\Users\\\\HAPPY\\\\OneDrive\\\\Desktop\\\\react-project\\\\health-app\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-11T21:34:41.273Z] [runtime-status] [2040] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2040] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-06-11T21:34:41.273Z] [runtime-status] [2040] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.0","resolution":"C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2040] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"C:\\\\Users\\\\HAPPY\\\\OneDrive\\\\Desktop\\\\react-project\\\\health-app\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-06-11T21:34:41.276Z] [runtime-status] [2040] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2040] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"C:\\\\Users\\\\HAPPY\\\\OneDrive\\\\Desktop\\\\react-project\\\\health-app\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-11T21:34:41.281Z] [runtime-status] [2040] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2040] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"C:\\\\Users\\\\HAPPY\\\\OneDrive\\\\Desktop\\\\react-project\\\\health-app\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-06-11T21:34:41.288Z] [runtime-status] [2040] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2040] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"C:\\\\Users\\\\HAPPY\\\\OneDrive\\\\Desktop\\\\react-project\\\\health-app\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-11T21:34:41.288Z] [runtime-status] [2040] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.9.0","resolution":"C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2040] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"C:\\\\Users\\\\HAPPY\\\\OneDrive\\\\Desktop\\\\react-project\\\\health-app\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-06-11T21:34:42.055Z] [runtime-status] [2040] Functions runtime initialized. {"cwd":"C:\\Users\\HAPPY\\OneDrive\\Desktop\\react-project\\health-app\\functions","node_version":"19.9.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2040] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\HAPPY\\\\OneDrive\\\\Desktop\\\\react-project\\\\health-app\\\\functions\",\"node_version\":\"19.9.0\"}"}}
+[debug] [2023-06-11T21:34:42.056Z] [runtime-status] [2040] Listening to port: \\?\pipe\fire_emu_89de90e645e524aa {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [2040] Listening to port: \\\\?\\pipe\\fire_emu_89de90e645e524aa"}}
+[debug] [2023-06-11T21:34:42.110Z] [worker-us-central1-api-2cbed426-6400-481f-bc21-43c8333399eb]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-2cbed426-6400-481f-bc21-43c8333399eb]: IDLE"}}
+[debug] [2023-06-11T21:34:42.110Z] [worker-pool] submitRequest(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-api)"}}
+[info] i  functions: Beginning execution of "us-central1-api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"us-central1-api\""}}
+[debug] [2023-06-11T21:34:42.117Z] [worker-us-central1-api-2cbed426-6400-481f-bc21-43c8333399eb]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-2cbed426-6400-481f-bc21-43c8333399eb]: BUSY"}}
+[debug] [2023-06-11T21:34:42.134Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-api" in 16.9103ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"us-central1-api\" in 16.9103ms"}}
+[debug] [2023-06-11T21:34:42.142Z] [worker-us-central1-api-2cbed426-6400-481f-bc21-43c8333399eb]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[worker-us-central1-api-2cbed426-6400-481f-bc21-43c8333399eb]: IDLE"}}
+[debug] [2023-06-11T21:34:42.143Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-11T21:34:42.143Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-11T21:34:42.143Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-11T21:34:42.355Z] Functions emulator received unknown request at path /favicon.ico

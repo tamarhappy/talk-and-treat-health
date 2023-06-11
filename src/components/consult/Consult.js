@@ -29,7 +29,7 @@ const Consult = () => {
         />
         <Consultstyle 
         id='2'
-        price={99.9}
+        price={99.99}
         rating={5}
         />
         <h2>Dr.Aneesa Park</h2>

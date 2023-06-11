@@ -9,7 +9,6 @@ const Subtotal = () => {
   const history = useHistory();
   const feeContext = useContext(FeeContext);
   const { basket, getBasketTotal } = feeContext;
- 
   
   return (
     <div className='subtotal'>

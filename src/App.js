@@ -1,6 +1,8 @@
 import React, { useContext, useEffect } from 'react';
 import './App.css';
 import { Redirect, Route, Switch } from 'react-router-dom';
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js'
 import { auth } from './firebase';
 import Navigation from './components/layout/Navigation';
 import Home from './components/home/Home';
@@ -17,6 +19,7 @@ import Cardio from './components/dashboard/cardio/Cardio';
 import Payment from './components/payment/Payment';
 import FeeContext from './components/context/feeContext';
 
+const promise = loadStripe('pk_test_51N3QrZFPKuANCBaTGFfdXixxUD9NiVlX3z7Baa7lkoZ3CAtrwwO4OP6HVUDZUgQaZ5whgEONdCPzcelhuLGjc2Fw003OwLbefB');
 
 const App = () => {
    const feeContext = useContext(FeeContext);
@@ -84,7 +87,9 @@ const App = () => {
       <Checkout />
      </Route>
      <Route path='/payments'>
-      <Payment />
+      <Elements stripe={promise}>
+        <Payment />
+      </Elements>
      </Route>
     <Footer />
     </Switch>
