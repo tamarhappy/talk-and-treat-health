@@ -88,27 +88,27 @@ const Dashboard = () => {
                     <h2>Patient activities</h2>
                     {/* Put date function here */}
                 </div>
-                <img className='data' 
-                 src='https://document-export.canva.com/0swIw/DAFjKI0swIw/10/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20230518%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230518T033625Z&X-Amz-Expires=27817&X-Amz-Signature=2a11c8cf906c554004bc37f0b78569f7df4064216b563e875a9ff6baff19d556&X-Amz-SignedHeaders=host&response-expires=Thu%2C%2018%20May%202023%2011%3A20%3A02%20GMT' 
-                 alt='' 
-                />
+                <Link to={'/consult'}>
+                <div className='dash_containerFour'>
+                    <h1>See A Doc...</h1>
+                    <img className='image_5' 
+                     src='https://www.shareicon.net/data/512x512/2016/08/18/813847_people_512x512.png' 
+                     alt='' 
+                    />
+                    <span className='material-symbols-rounded'>sms</span>
+                    <span className='nav_optionOne'>Consult</span>
+                </div>
+                </Link>
             </div>
             <div className='dash_containerThree'>
                 <h1>Health Progress</h1>
                 <span class="material-symbols-rounded">trending_up</span>
                 <span class="material-symbols-rounded">clinical_notes</span>
             </div>
-            <Link to={'/consult'}>
-            <div className='dash_containerFour'>
-                <h1>See A Doc...</h1>
-                <img className='image_5' 
-                 src='https://www.shareicon.net/data/512x512/2016/08/18/813847_people_512x512.png' 
-                 alt='' 
-                />
-                <span className='material-symbols-rounded'>sms</span>
-                <span className='nav_optionOne'>Consult</span>
-            </div>
-            </Link>
+            <img className='data' 
+             src='https://document-export.canva.com/0swIw/DAFjKI0swIw/10/thumbnail/0001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUHWDTJW6UD%2F20230518%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230518T033625Z&X-Amz-Expires=27817&X-Amz-Signature=2a11c8cf906c554004bc37f0b78569f7df4064216b563e875a9ff6baff19d556&X-Amz-SignedHeaders=host&response-expires=Thu%2C%2018%20May%202023%2011%3A20%3A02%20GMT' 
+             alt='' 
+            />
         </div>
     </div>
   );

@@ -51,6 +51,7 @@
 .data {
     border-radius: 20px;
     margin-right: 500px;
+    margin-top: 50px;
 }
 
 .main_page {
@@ -91,7 +92,7 @@
     padding-bottom: 190px;
     padding-right: 100px;
     margin-left: 600px;
-    margin-top: -4px;
+    margin-top: -40px;
     position: absolute;
 }
 
@@ -111,13 +112,12 @@
 
 .dash_containerFour {
     background: white;
-    width: 300px;
+    width: 480px;
     height: fit-content;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
     border: 1px solid lightgray;
     padding: 20px;
-    margin-right: 680px;
-    margin-top: 30px;
+    margin-right: 500px;
 }

@@ -6,7 +6,7 @@ import { useContext } from 'react';
 
 const Navigation = () => {
   const feeContext = useContext(FeeContext);
-  const { basket, user } = feeContext;
+  const { user } = feeContext;
 
   const handleAuthentication = () => {
     if(user) {
@@ -30,7 +30,7 @@ const Navigation = () => {
         <div className='nav_options'>
           <Link to={!user && '/login'}>
           <div className='nav_option' onClick={handleAuthentication}>
-              <span className='nav_optionOne'>
+              <span className='nav_optionOne1'>
                 Hello, {!user ? 'Guest' : user.email}
               </span>
           </div>
@@ -53,13 +53,13 @@ const Navigation = () => {
                 <span className='nav_optionOne'>Checkout</span>
             </div>
           </Link>
-          <Link to='/checkout'>
+          {/* <Link to='/checkout'>
             <div className='header_optionBasket'>
                       <span className='header_optionTwo header_basketCount'>
                         {basket?.length}
                       </span>
             </div>
-          </Link>
+          </Link> */}
           {/* <Link to={'/contacts'}>
           <div className='nav_option'>
               <span className='material-symbols-rounded'>call</span>

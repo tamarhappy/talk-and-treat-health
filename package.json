@@ -1,7 +1,7 @@
 {
   "name": "health-app",
   "version": "0.1.0",
-  "homepage": "https://tamarhappy.github.io/health-app",
+  "homepage": "https://tamarhappy.github.io/talk-and-treat-health",
   "private": true,
   "dependencies": {
     "@stripe/react-stripe-js": "^2.1.0",
@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
     "firebase": "^9.22.0",
+    "moments": "^0.0.2",
     "react": "^18.2.0",
     "react-currency-format": "^1.1.0",
     "react-dom": "^18.2.0",

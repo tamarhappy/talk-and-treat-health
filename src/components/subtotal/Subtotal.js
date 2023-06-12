@@ -18,9 +18,9 @@ const Subtotal = () => {
             Subtotal ({basket.length} items): 
             <strong>{value}</strong>
         </p>
-        <small className='subtotal_gift'>
+        {/* <small className='subtotal_gift'>
             <input type='checkbox'/>This order contains a gift
-        </small>
+        </small> */}
         </>
         }
         decimalScale={2}

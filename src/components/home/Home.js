@@ -28,6 +28,51 @@ const Home = () => {
              We've collaborated with some of the best doctors out there to make this possible for most 
              if not all Kenyans to access.</p>
         </div>
+        <div className='content'>
+          <h1>Reviews:</h1>
+          <div className="feedback-box">
+                <p>
+                    Sheeky Salon is the best place to go to when you need a cool haircut or hollywood worthy hair. Not only do they create a professional look, but they are also quite affordable.
+                </p>
+                <div className="author">
+                    <img className="imagine"
+                     src="https://bonaventureogeto.github.io/Sample-Sheeky/@Ressources/images/profile-1.jpg" 
+                     alt='' />
+                    <p>
+                        "Azim Yamani"
+                        <span>Patient</span>
+                    </p>
+                </div>
+            </div>
+            <div className="feedback-box">
+                <p>
+                    I love using my art to create amazing modern haircuts for both men and women. It is a passion of mine, having to put a smile on a clients face after their hairdo is an amazing feeling.
+                </p>
+                <div className="author">
+                    <img className="imagine" 
+                     src="https://bonaventureogeto.github.io/Sample-Sheeky/@Ressources/images/profile-2.jpg" 
+                     alt='' />
+                    <p>
+                        "Coby Miller"
+                        <span>Patient</span>
+                    </p>
+                </div>
+            </div>
+            <div className="feedback-box">
+                <p>
+                    My goal at the end of the day is to use this profession to enhance the crown that rests on everyone's very head. It is unique for each and everyone thus must be treated differently.
+                </p>
+                <div className="author">
+                    <img className="imagine" 
+                     src="https://bonaventureogeto.github.io/Sample-Sheeky/@Ressources/images/profile-3.jpg" 
+                     alt='' />
+                    <p>
+                        "Cassie Shore"
+                        <span>Patient</span>
+                    </p>
+                </div>
+          </div>
+        </div>
     </div>
   );
 };

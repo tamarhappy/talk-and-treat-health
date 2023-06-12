@@ -74,6 +74,14 @@
     font-size: 15px;
 }
 
+.nav_optionOne1 {
+    text-decoration: none;
+}
+
+.material-symbols-rounded {
+    text-decoration-style: none;
+}
+
 .nav_optionTwo {
     font-size: 13px;
     font-weight: 800;

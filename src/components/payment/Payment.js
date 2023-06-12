@@ -15,8 +15,8 @@ const Payment = () => {
 
     const history = useHistory();
 
-    const stripe = useStripe()
-    const elements = useElements()
+    const stripe = useStripe();
+    const elements = useElements();
 
     const [succeeded, setSucceeded] = useState(false);
     const [processing, setProcessing] = useState("");
@@ -34,14 +34,14 @@ const Payment = () => {
             setClientSecret(response.data.clientSecret);
         };
         getClientSecret();
-    }, [basket]);
+    }, [basket, getBasketTotal]);
     console.log("The secret is => ", clientSecret);
 
     const handleSubmit = (e) => {
         e.preventDefault();
         setProcessing(true)
 
-        const payload = stripe.confirmCardPayment(clientSecret, {
+        const payload =  stripe.confirmCardPayment(clientSecret, {
             payment_method: {card: elements.getElement(CardElement) },
         }).then(({paymentIntent}) => {
             //Payment intent = payment conservation
@@ -73,11 +73,11 @@ const Payment = () => {
     <div className='payment'>
         <div className='payment_container'>
             <h1>
-                Checkout <Link to='/checkout'>{basket?.length} items</Link>
+                Checkout <Link to='/checkout'></Link>
             </h1>
             <div className='payment_section'>
                 <div className='payment_title'>
-                    <h3>Delivery Address</h3>
+                    <h3>Patient's Address</h3>
                 </div>
                 <div className='payment_address'>
                     <p>{user?.email}</p>
@@ -87,7 +87,7 @@ const Payment = () => {
             </div>
             <div className='payment_section'>
                 <div className='payment_title'>
-                    <h3>Review items and delivery</h3>
+                    <h3>Review consultation fee</h3>
                 </div>
                 <div className='payment_items'>
                     {basket.map((item)=> (
@@ -109,7 +109,7 @@ const Payment = () => {
                         <CardElement onChange={handleChange}/>
                         <div className='payment_price_container'>
                             <CurrencyFormat 
-                            renderText={(value) => <h3>Order Total: {value}</h3>}
+                            renderText={(value) => <h3>Consultation Total: {value}</h3>}
                             decimalScale={2}
                             value={getBasketTotal(basket)}
                             displayType={"text"}

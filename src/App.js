@@ -10,6 +10,7 @@ import Login from './components/login/Login';
 import Dashboard from './components/dashboard/Dashboard';
 import Profile from './components/profile/Profile';
 import Consult from './components/consult/Consult';
+import ConsultDetails from './components/consult/ConsultDetails';
 import Pharmacy from './components/pharmacy/Pharmacy';
 import Footer from './components/footer/Footer';
 import Checkout from './components/checkout/Checkout';
@@ -35,7 +36,7 @@ const App = () => {
          setUser(null);
        }
      });
-   }, []);
+   }, [setUser]);
 
    return (
      <div>
@@ -70,9 +71,12 @@ const App = () => {
       <Profile />
       <Footer />
      </Route>
-     <Route path='/consult'>
+     <Route path='/consult' exact>
       <Navigation />
       <Consult />
+     </Route>
+     <Route path='/consult/:id'>
+      <ConsultDetails />
      </Route>
      <Route path='/pharmacy'>
       <Navigation />
@@ -86,12 +90,11 @@ const App = () => {
      <Route path='/checkout'>
       <Checkout />
      </Route>
-     <Route path='/payments'>
+     <Route path='/payment'>
       <Elements stripe={promise}>
         <Payment />
       </Elements>
      </Route>
-    <Footer />
     </Switch>
      </div>
    );

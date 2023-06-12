@@ -25,7 +25,7 @@ const Consultstyle = ({id, rating, price}) => {
             </p>
       </div>
       <Link to='/profile'>
-      <button className='urgent' onClick={addToBasketHandler}>Urgent message</button>
+      <button className='urgent' onClick={addToBasketHandler}>Consult</button>
       </Link>
     </div>
   )

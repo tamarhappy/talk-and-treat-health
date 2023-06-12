@@ -1,7 +1,5 @@
 import React from 'react';
 import './Pharmacy.css';
-import { Link } from 'react-router-dom';
-import Pharm from './Pharm';
 
 const Pharmacy = () => {
   return (
@@ -19,9 +17,7 @@ const Pharmacy = () => {
              alt='' 
             />
             <h3>Ibuprofen</h3>
-            <Pharm 
-            price={6.99}
-            />
+
             <div className='pharm_buy'>
               <button className='buy'><a href='https://doveypharma.com/home-2/shop-3/'>BUY</a></button>
             </div>
@@ -33,14 +29,10 @@ const Pharmacy = () => {
              alt='' 
             />
             <h3>Paracetamol</h3>
-            <Pharm 
-            price={1.99}
-            />
-            <Link to='/checkout'>
+          
             <div className='pharm_buy'>
               <button className='buy'>BUY</button>
             </div>
-            </Link>
           </div>
 
           <div className='med_3'>
@@ -49,14 +41,10 @@ const Pharmacy = () => {
              alt='' 
             />
             <h3>Amoxicilin</h3>
-            <Pharm
-            price={10.99}
-            />
-            <Link to='/checkout'>
+          
             <div className='pharm_buy'>
               <button className='buy'>BUY</button>
             </div>
-            </Link>
           </div>
 
           <div className='med_4'>
@@ -65,19 +53,11 @@ const Pharmacy = () => {
              alt='' 
             />
             <h3>Flagyl</h3>
-            <Pharm
-            price={9.99}
-            />
-            <Link to='/checkout'>
+
             <div className='pharm_buy'>
-      
               <button className='buy'>BUY</button>
             </div>
-            </Link>
           </div>
-        </div>
-        <div className='prescribe'>
-            {/* prescribe here */}
         </div>
     </div>
   )
