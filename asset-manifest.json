@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/talk-and-treat-health/static/css/main.9c4ad8f5.css",
-    "main.js": "/talk-and-treat-health/static/js/main.754c3d99.js",
+    "main.js": "/talk-and-treat-health/static/js/main.ac8d05b7.js",
     "index.html": "/talk-and-treat-health/index.html",
     "main.9c4ad8f5.css.map": "/talk-and-treat-health/static/css/main.9c4ad8f5.css.map",
-    "main.754c3d99.js.map": "/talk-and-treat-health/static/js/main.754c3d99.js.map"
+    "main.ac8d05b7.js.map": "/talk-and-treat-health/static/js/main.ac8d05b7.js.map"
   },
   "entrypoints": [
     "static/css/main.9c4ad8f5.css",
-    "static/js/main.754c3d99.js"
+    "static/js/main.ac8d05b7.js"
   ]
 }
