@@ -36,7 +36,7 @@ const App = () => {
          setUser(null);
        }
      });
-   }, [setUser]);
+   }, []);
 
    return (
      <div>
