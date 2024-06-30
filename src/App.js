@@ -31,7 +31,7 @@ const App = () => {
        console.log('User is ->', authUser);
 
        if(authUser) {
-        setUser(authUser);
+         setUser(authUser);
        } else {
          setUser(null);
        }
